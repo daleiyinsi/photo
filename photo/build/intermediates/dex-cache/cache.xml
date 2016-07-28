@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_0b489d357e4b1e85b73d374272c6bedb1ac57519.jar" />
+    </item>
+    <item
+        jar="F:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_336a5448c75e7fcdc9adce184c51f0552e8e5082.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_a2d0abcf7b881516c2807eb6eb8e98727d301d3c.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_8d7e4c03c7a09e9fd1eb7aae534a5b528f45b916.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f301083fa5ea89a648dffe0b617c19b8642e587b.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_4a89f69e4d1ed7e2f25281d89d05b14331f7bbbc.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\libs\universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4_902faa8722b80d031da63aa357d59cb66e773b48.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_e68d8f82106dbb06f667ef9fd433dacd0cd93d5d.jar" />
+    </item>
+    <item
+        jar="D:\money\code\photo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\money\code\photo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_0b96e08ab9f887be8365a94e0c7238924c082e40.jar" />
+    </item>
+
+</items>
