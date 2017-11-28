@@ -8,16 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.li.shanfeng.photo.R;
-import com.nostra13.universalimageloader.core.ImageLoader;
+import com.squareup.picasso.Picasso;
 
 public class MyGridAdapter extends BaseAdapter {
 	private String[] files;
+	private Context context;
 
 	private LayoutInflater mLayoutInflater;
 
 	public MyGridAdapter(String[] files, Context context) {
 		this.files = files;
 		mLayoutInflater = LayoutInflater.from(context);
+		this.context=context;
 	}
 
 	@Override
@@ -50,7 +52,7 @@ public class MyGridAdapter extends BaseAdapter {
 		}
 		String url = getItem(position);
 
-		ImageLoader.getInstance().displayImage(url, viewHolder.imageView);
+		Picasso.with(context).load(url).error(R.color.PGrary).placeholder(R.color.PGrary).into(viewHolder.imageView);
 
 		return convertView;
 	}

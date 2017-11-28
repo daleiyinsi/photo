@@ -13,17 +13,14 @@ import android.widget.Toast;
 
 import com.li.shanfeng.photo.R;
 import com.li.shanfeng.photo.image.photoview.PhotoViewAttacher;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 
 public class ImageDetailFragment extends Fragment {
 	private String mImageUrl;
 	private ImageView mImageView;
 	private ProgressBar progressBar;
 	private PhotoViewAttacher mAttacher;
-	private DisplayImageOptions options;
 	private ImageView ivsave;
 	private Bitmap bitmap;
 
@@ -85,6 +82,21 @@ public class ImageDetailFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 
+		Picasso.with(getContext()).load(mImageUrl).placeholder(R.color.PGrary).error(R.color.PGrary).into(mImageView, new Callback() {
+			@Override
+			public void onSuccess() {
+				progressBar.setVisibility(View.GONE);
+				mAttacher.update();
+			}
+
+			@Override
+			public void onError() {
+				Toast.makeText(getActivity(), "图片加载失败", Toast.LENGTH_SHORT).show();
+				progressBar.setVisibility(View.GONE);
+			}
+		});
+/*
+
 		options = new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.mipmap.photo_error).showImageOnFail(R.mipmap.photo_error)
 				.bitmapConfig(Bitmap.Config.RGB_565).build();
 
@@ -126,6 +138,7 @@ public class ImageDetailFragment extends Fragment {
 				mAttacher.update();
 			}
 		});
+*/
 
 	}
 
