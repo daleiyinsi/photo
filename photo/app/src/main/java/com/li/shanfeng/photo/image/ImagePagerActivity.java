@@ -22,6 +22,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Li Shanfeng
+ */
 public class ImagePagerActivity extends FragmentActivity {
     private static final String STATE_POSITION = "STATE_POSITION";
     public static final String EXTRA_IMAGE_INDEX = "image_index";
@@ -29,7 +32,10 @@ public class ImagePagerActivity extends FragmentActivity {
     private HackyViewPager mPager;
     private TextView indicator;
     private int pagerPosition;
-    private List<String> imageUrl = new ArrayList<String>(); // 滑动的图片集合
+    /**
+     * 滑动的图片集合
+     */
+    private List<String> imageUrl = new ArrayList<String>();
     private Context mContext;
     private Bundle savedInstanceState;
 
@@ -46,7 +52,6 @@ public class ImagePagerActivity extends FragmentActivity {
         mContext = ImagePagerActivity.this;
         Bundle bundle = getIntent().getExtras();
         pagerPosition = getIntent().getIntExtra(EXTRA_IMAGE_INDEX, 0);
-
         imageUrl = getIntent().getStringArrayListExtra("pics");
         reqBitmap();
 
@@ -66,7 +71,8 @@ public class ImagePagerActivity extends FragmentActivity {
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
 
         tintManager.setStatusBarTintEnabled(false);
-        tintManager.setStatusBarTintResource(0);// 状态栏无背景
+        // 状态栏无背景
+        tintManager.setStatusBarTintResource(0);
     }
 
     public void reqBitmap() {
@@ -74,8 +80,8 @@ public class ImagePagerActivity extends FragmentActivity {
             return;
         }
         final int size = imageUrl.size();
-        String[] urls = (String[]) imageUrl.toArray(new String[size]);// list转数组
-
+        // list转数组
+        String[] urls = (String[]) imageUrl.toArray(new String[size]);
         mPager = (HackyViewPager) findViewById(R.id.pager);
         ImagePagerAdapter mAdapter = new ImagePagerAdapter(getSupportFragmentManager(), urls);
         mPager.setAdapter(mAdapter);

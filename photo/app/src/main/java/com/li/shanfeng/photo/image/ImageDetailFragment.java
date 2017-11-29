@@ -16,6 +16,9 @@ import com.li.shanfeng.photo.image.photoview.PhotoViewAttacher;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
+/**
+ * @author Li Shanfeng
+ */
 public class ImageDetailFragment extends Fragment {
 	private String mImageUrl;
 	private ImageView mImageView;
@@ -51,7 +54,6 @@ public class ImageDetailFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				if(bitmap!=null){
-//					Tools.saveImage(ImageDetailFragment.this.getActivity(),bitmap);
 				}
 			}
 		});
@@ -95,51 +97,6 @@ public class ImageDetailFragment extends Fragment {
 				progressBar.setVisibility(View.GONE);
 			}
 		});
-/*
-
-		options = new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.mipmap.photo_error).showImageOnFail(R.mipmap.photo_error)
-				.bitmapConfig(Bitmap.Config.RGB_565).build();
-
-		ImageLoader.getInstance().displayImage(mImageUrl, mImageView, options, new SimpleImageLoadingListener() {
-			@Override
-			public void onLoadingStarted(String imageUri, View view) {
-				ImageDetailFragment.this.bitmap=null;
-				progressBar.setVisibility(View.VISIBLE);
-			}
-
-			@Override
-			public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-				String message = null;
-				switch (failReason.getType()) {
-				case IO_ERROR:
-					message = "图片加载失败";
-					break;
-				case DECODING_ERROR:
-					message = "图片无法显示";
-					break;
-				case NETWORK_DENIED:
-					message = "网络有问题，无法下载";
-					break;
-				case OUT_OF_MEMORY:
-					message = "图片太大无法显示";
-					break;
-				case UNKNOWN:
-					message = "未知的错误";
-					break;
-				}
-				Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-				progressBar.setVisibility(View.GONE);
-			}
-
-			@Override
-			public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-				ImageDetailFragment.this.bitmap=loadedImage;
-				progressBar.setVisibility(View.GONE);
-				mAttacher.update();
-			}
-		});
-*/
-
 	}
 
 }

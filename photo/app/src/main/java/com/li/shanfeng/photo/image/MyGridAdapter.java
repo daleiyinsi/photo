@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import com.li.shanfeng.photo.R;
 import com.squareup.picasso.Picasso;
 
+/**
+ * @author Li Shanfeng
+ */
 public class MyGridAdapter extends BaseAdapter {
 	private String[] files;
 	private Context context;
