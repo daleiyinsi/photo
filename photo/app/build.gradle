@@ -3,12 +3,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 23
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -33,10 +33,10 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
 }
 // 项目引用的版本号，比如compile 'com.yanzhenjie:andserver:1.0.1'中的1.0.1就是这里配置的。
-version = "1.1"
+version = "1.2"
 
 // 定义两个链接，下面会用到。
-def siteUrl = 'https://github.com/yanzhenjie/AndServer' // 项目主页。
+def siteUrl = 'https://github.com/daleiyinsi/photo' // 项目主页。
 def gitUrl = 'git@github.com:yanzhenjie/AndServer.git' // Git仓库的url。
 
 // 唯一包名，比如compile 'com.yanzhenjie:andserver:1.0.1'中的com.yanzhenjie就是这里配置的。
